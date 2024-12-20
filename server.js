@@ -82,16 +82,16 @@ app.get('/api/words', (req, res) => {
 });
 
 // Seviyeye göre kelimeleri getir
-app.get('/api/words/:level', (req, res) => {
-    const level = req.params.level;
-    db.all("SELECT * FROM words WHERE level = ?", [level], (err, rows) => {
-        if (err) {
-            res.status(400).json({ error: err.message });
-            return;
-        }
-        res.json(rows);
-    });
-});
+// app.get('/api/words/:level', (req, res) => {
+//     const level = req.params.level;
+//     db.all("SELECT * FROM words WHERE level = ?", [level], (err, rows) => {
+//         if (err) {
+//             res.status(400).json({ error: err.message });
+//             return;
+//         }
+//         res.json(rows);
+//     });
+// });
 
 // Yeni kelime ekle
 app.post('/api/words', (req, res) => {
