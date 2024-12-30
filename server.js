@@ -9,6 +9,7 @@ const port = process.env.PORT || 3000;
 app.use(cors({
     origin: [
         'https://metgame.netlify.app',  
+        'https://metgames1.netlify.app',
         'https://myengwords-production.up.railway.app',
         'http://localhost:3000',
         'http://localhost:5500',
