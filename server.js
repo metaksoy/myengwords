@@ -11,6 +11,7 @@ app.use(cors({
         'https://metgame.netlify.app',  
         'https://metgames1.netlify.app',
         'https://myengwords-production.up.railway.app',
+        'https://metgames2.netlify.app'
         'http://localhost:3000',
         'http://localhost:5500',
         'http://localhost:5501',
